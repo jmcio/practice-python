@@ -12,7 +12,7 @@ def sorted_array(ar):
 
 
 def main():
-    ar = [1, 2, 2, 6, 6, 6, 6, 7, 10]
+    ar = [1, 2, 2, 6, 6, 6, 6, 7, 12,13,14]
     print("Element more than 25%: ", sorted_array(ar))
 
 
