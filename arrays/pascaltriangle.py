@@ -1,4 +1,5 @@
 # Implement pascal's triangle using lists
+# Practice code added by jmcio 4/28/22
 
 def triangle_list(k):
     result_v = []
