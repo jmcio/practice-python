@@ -1,5 +1,7 @@
 from linked_list import LinkedList
-# from node import Node
+from singly_linked_list import SList
+
+#  from node import Node
 
 
 def main():
@@ -28,6 +30,63 @@ def main():
     ll.append(365)
     print("List content: ", ll)
 
+def main2():
+    slist = SList()
+    print("List size: ", slist.size())
+    print("Empty check: ", slist.empty())
+    print("List contents: ", str(slist))
+
+    new_v = 36
+    print("Push front: ", slist.push_front(new_v))
+    print("List size: ", slist.size())
+
+    new_v = 45
+    print("Push front: ", slist.push_front(new_v))
+    print("List size: ", slist.size())
+
+    new_v = 51
+    print("Push front: ", slist.push_front(new_v))
+    print("List size: ", slist.size())
+
+    print("List contents: ", str(slist))
+
+    index_v = 1
+    print("Value at index: ", index_v, slist.value_at(index_v))
+
+    print("Pop front: ", slist.pop_front())
+    print("List size: ", slist.size())
+
+    new_v = 9
+    print("Push back: ", slist.push_back(new_v))
+    print("List size: ", slist.size())
+
+    new_v = 11
+    print("Push back: ", slist.push_back(new_v))
+    print("List size: ", slist.size())
+
+    print("Pop back: ", slist.pop_back())
+    print("List size: ", slist.size())
+
+    index_v = 1
+    new_v = 23
+    print("Insert before: ", index_v, slist.insert_before(index_v,new_v))
+
+    index_v = 3
+    new_v = 81
+    print("Insert before: ", index_v, slist.insert_before(index_v,new_v))
+
+    print("List size....: ", slist.size())
+    print("List contents....: ", str(slist))
+
+    index_v = 4
+    print("Erase index: ", index_v, slist.erase(index_v))
+
+    print("Front item: ", slist.front())
+    print("Back item: ", slist.back())
+    print("List size: ", slist.size())
+
+    print("List contents: ", str(slist))
+
 
 if __name__ == "__main__":
-    main()
+    main2()
