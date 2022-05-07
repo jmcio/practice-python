@@ -122,3 +122,39 @@ class SList(object):
                 item_count += 1
             prev_ptr = current_ptr
             current_ptr = current_ptr.get_next()
+
+    def remove_value(self, item_value):
+        current_ptr = self.head_
+        prev_ptr = None
+        while current_ptr:
+            if current_ptr.get_item() == item_value:
+                prev_ptr.set_next(current_ptr.get_next())
+                return current_ptr.get_item()
+            else:
+                prev_ptr = current_ptr
+                current_ptr = current_ptr.get_next()
+
+    def value_n_from_end(self, index_value):
+        item_count = 0
+        current_ptr = self.head_
+        while current_ptr:
+            if item_count == self.size() - index_value - 1:
+                return current_ptr.get_item()
+            else:
+                item_count += 1
+            current_ptr = current_ptr.get_next()
+
+    def reverse(self):
+        current_ptr = self.head_
+        new_head = SNode()
+        while current_ptr:
+            next_node = SNode()
+            next_node = current_ptr.get_next()
+            if current_ptr == self.head_:
+                current_ptr.set_next(None)
+            else:
+                current_ptr.set_next(new_head)
+            self.set_head(current_ptr)
+            new_head = current_ptr
+            current_ptr = next_node
+        return new_head
