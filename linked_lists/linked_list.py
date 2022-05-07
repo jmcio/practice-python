@@ -52,7 +52,7 @@ class LinkedList(object):
                     prev.set_next(current.get_next())
                 else:
                     self.head_ = current.get_next()
-            else
+            else:
                 prev = current
             current = current.get_next()
 
