@@ -23,7 +23,6 @@ def is_palindrome(head_node):
 
     s_list.set_head(slow_node.get_next())
     second_half_head = s_list.reverse()
-    #slow_node.set_next(None)
     first_half_head = head_node
 
     while second_half_head and first_half_head:
@@ -36,10 +35,10 @@ def is_palindrome(head_node):
 
 
 def main():
-    list_v = (1, 2, 2, 1)
+    list_v = ('l', 'e', 'v', 'e', 'r')
     linked_list = SList()
     for i in list_v:
-        linked_list.push_front(i)
+        linked_list.push_back(i)
     head_v = linked_list.head_
     print("Singly linked list: ", linked_list)
     print("List is a palindrome: ", is_palindrome(head_v))

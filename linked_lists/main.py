@@ -61,7 +61,7 @@ def main2():
     print("Push front: ", slist.push_front(new_v))
 
     new_v = 32
-    print("Push front: ", slist.push_front(new_v))
+    print("Push back: ", slist.push_back(new_v))
 
     print("List contents: ", str(slist))
 
@@ -109,6 +109,7 @@ def main2():
     # print("List size: ", slist.size())
     #
     print("List contents: ", str(slist))
+    print("List size: ", slist.size())
 
 
 if __name__ == "__main__":
