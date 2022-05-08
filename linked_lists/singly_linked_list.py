@@ -229,13 +229,3 @@ class STList(object):
             return current_ptr
         else:
             raise IndexError("Unable to pop from empty list")
-
-    def enqueue(self, item_value):
-        return self.append(item_value)
-
-    def dequeue(self):
-        return self.pop()
-
-    def empty(self):
-        while not self.is_empty():
-            self.dequeue()

@@ -1,5 +1,7 @@
 from linked_list import LinkedList
 from singly_linked_list import SList, STList
+from snode import SNode
+from queue_llist import QueueList
 
 #  from node import Node
 
@@ -112,10 +114,7 @@ def main2():
 
 
 def main3():
-    ll = STList()
-
-    from snode import SNode
-
+    ll = QueueList()
     i = SNode(3)
     ll.push(i)
     i = SNode(4)
@@ -132,6 +131,7 @@ def main3():
     print("Head: ", ll.head_)
     print("Tail: ", ll.tail_)
     print("Is empty: ", ll.is_empty())
+    print("Emptying queue... ")
     ll.empty()
     print("Is empty: ", ll.is_empty())
 
