@@ -1,5 +1,5 @@
 from linked_list import LinkedList
-from singly_linked_list import SList
+from singly_linked_list import SList, STList
 
 #  from node import Node
 
@@ -111,5 +111,30 @@ def main2():
     print("List size: ", slist.size())
 
 
+def main3():
+    ll = STList()
+
+    from snode import SNode
+
+    i = SNode(3)
+    ll.push(i)
+    i = SNode(4)
+    ll.append(i)
+    i = 5
+    print("Enqueue: ", ll.enqueue(i))
+    i = 6
+    print("Enqueue: ", ll.enqueue(i))
+    print("List contents: ", ll)
+    print("Head: ", ll.head_)
+    print("Tail: ", ll.tail_)
+    print("Dequeue: ", ll.dequeue())
+    print("List contents: ", ll)
+    print("Head: ", ll.head_)
+    print("Tail: ", ll.tail_)
+    print("Is empty: ", ll.is_empty())
+    ll.empty()
+    print("Is empty: ", ll.is_empty())
+
+
 if __name__ == "__main__":
-    main2()
+    main3()

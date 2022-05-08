@@ -15,7 +15,7 @@ class SNode (object):
     def get_next(self):
         return self.next_
 
-    def set_next(self, next_node):
+    def set_next(self, next_node=None):
         self.next_ = next_node
 
     def __str__(self):

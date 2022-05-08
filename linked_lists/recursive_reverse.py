@@ -1,4 +1,6 @@
 #  Practice code added by jmcio 5/8/2022
+#  Reverse a singly linked list recursively
+
 
 from snode import SNode
 from singly_linked_list import SList
