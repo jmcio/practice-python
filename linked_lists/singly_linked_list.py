@@ -5,9 +5,9 @@ from snode import SNode
 
 
 class SList(object):
-    def __init__(self):
-        self.head_ = None
-        self.size_ = None
+    def __init__(self, head_node=None):
+        self.head_ = head_node
+        self.size_ = len(self)
 
     def set_head(self, head_node):
         self.head_ = head_node
@@ -24,8 +24,10 @@ class SList(object):
         item_value = ""
         current_ptr = self.head_
         while current_ptr:
-            item_value += str(current_ptr) + ' -> '
+            item_value += str(current_ptr)
             current_ptr = current_ptr.get_next()
+            if current_ptr is not None:
+                item_value += '->'
         return item_value
 
     def size(self):
@@ -61,12 +63,15 @@ class SList(object):
     def push_back(self, item_value):
         insert_node = SNode(item_value)
         current_ptr = self.head_
+        if current_ptr is None:
+            self.set_head(insert_node)
+            return insert_node
         while current_ptr:
             if current_ptr.get_next() is None:
                 current_ptr.set_next(insert_node)
                 break
             current_ptr = current_ptr.get_next()
-        return insert_node.get_item()
+        return insert_node
 
     def pop_back(self):
         current_ptr = self.head_
@@ -144,8 +149,8 @@ class SList(object):
                 item_count += 1
             current_ptr = current_ptr.get_next()
 
-    def reverse(self):
-        current_ptr = self.head_
+    def reverse(self, head_node=None):
+        current_ptr = head_node or self.head_
         new_head = SNode()
         while current_ptr:
             next_node = SNode()

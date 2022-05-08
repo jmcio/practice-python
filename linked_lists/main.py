@@ -61,7 +61,7 @@ def main2():
     print("Push front: ", slist.push_front(new_v))
 
     new_v = 32
-    print("Push front: ", slist.push_front(new_v))
+    print("Push back: ", slist.push_back(new_v))
 
     print("List contents: ", str(slist))
 
@@ -98,8 +98,7 @@ def main2():
 
     # new_v = 81
     # print("Erase value: ", slist.remove_value(new_v))
-    new_list = slist.reverse()
-    print("Reverse list....: ", slist)
+    print("Reverse list....: ", slist.reverse())
 
     # index_v = 2
     # print("Value at index: ", index_v, slist.value_n_from_end(index_v))
@@ -109,6 +108,7 @@ def main2():
     # print("List size: ", slist.size())
     #
     print("List contents: ", str(slist))
+    print("List size: ", slist.size())
 
 
 if __name__ == "__main__":
