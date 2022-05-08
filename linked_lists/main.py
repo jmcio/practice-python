@@ -98,8 +98,7 @@ def main2():
 
     # new_v = 81
     # print("Erase value: ", slist.remove_value(new_v))
-    new_list = slist.reverse()
-    print("Reverse list....: ", slist)
+    print("Reverse list....: ", slist.reverse())
 
     # index_v = 2
     # print("Value at index: ", index_v, slist.value_n_from_end(index_v))
