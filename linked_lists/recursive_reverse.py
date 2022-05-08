@@ -22,7 +22,7 @@ def main():
         linked_list.push_back(i)
     head_v = linked_list.head_
     print("Singly linked list: ", linked_list)
-    print("Reversed: ", SList(reverse(head_v)))
+    print("Reversed: ", SList(reverse(head_v, None)))
 
 
 if __name__ == "__main__":

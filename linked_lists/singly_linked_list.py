@@ -152,14 +152,13 @@ class SList(object):
     def reverse(self, head_node=None):
         current_ptr = head_node or self.head_
         new_head = SNode()
+        new_head = None
         while current_ptr:
             next_node = SNode()
             next_node = current_ptr.get_next()
-            if current_ptr == self.head_:
-                current_ptr.set_next(None)
-            else:
-                current_ptr.set_next(new_head)
-            self.set_head(current_ptr)
+            current_ptr.set_next(new_head)
             new_head = current_ptr
             current_ptr = next_node
+        if not head_node:
+            self.set_head(new_head)
         return new_head
