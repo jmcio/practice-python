@@ -35,18 +35,7 @@ def vector_practice(size):
 
 
 def main2():
-    q = Queue(5)
-    q.enqueue(3)
-    q.enqueue(4)
-    q.enqueue(5)
-    q.enqueue(6)
-    q.enqueue(7)
-    q.dequeue()
-    #q.enqueue(8)
-
-    print("Queue size: ", q)
-    print("Read index: ", q.read_)
-    print("Write index: ", q.write_)
+    print()
 
 
 if __name__ == "__main__":
