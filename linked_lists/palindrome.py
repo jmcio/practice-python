@@ -35,7 +35,7 @@ def is_palindrome(head_node):
 
 
 def main():
-    list_v = ('l', 'e', 'v', 'e', 'r')
+    list_v = ('l', 'e', 'v', 'e', 'l')
     linked_list = SList()
     for i in list_v:
         linked_list.push_back(i)

@@ -2,6 +2,9 @@
 # Practice code added by jmcio 4/24/22
 
 
+from queue_array import Queue
+
+
 def array_test():
     ar = [3, 2, 4, 5]
     print("Original: ", ar)
@@ -25,14 +28,15 @@ def array_test():
     ar.sort()
     print("sorted in place: ", ar)
 
+
 def vector_practice(size):
     vector = list(range(size))
     print("List with size: ", size, vector)
 
 
-def main():
-    array_test()
-#    vector_practice(16)
+def main2():
+    print()
+
 
 if __name__ == "__main__":
-    main()
+    main2()

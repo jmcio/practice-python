@@ -1,4 +1,6 @@
 #  Practice code added by jmcio 5/8/2022
+#  Reverse a singly linked list recursively
+
 
 from snode import SNode
 from singly_linked_list import SList
@@ -22,7 +24,7 @@ def main():
         linked_list.push_back(i)
     head_v = linked_list.head_
     print("Singly linked list: ", linked_list)
-    print("Reversed: ", SList(reverse(head_v)))
+    print("Reversed: ", SList(reverse(head_v, None)))
 
 
 if __name__ == "__main__":
