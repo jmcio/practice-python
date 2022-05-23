@@ -1,5 +1,5 @@
 #  hashtable.py
 
 
-class HashTable:
+class HashTable(object):
     pass
