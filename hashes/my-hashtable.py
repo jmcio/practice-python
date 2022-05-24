@@ -1,5 +1,6 @@
 #  my-hashtable.py
-
+#  Practice code added by jmcio 5/21/2022
+#  Implement Hash Table
 
 class HashTable:
     def __init__(self, items: int = 10):
