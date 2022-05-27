@@ -49,7 +49,6 @@ class HashTable:
             print('Key {} not found'.format(key))
 
 
-
 ht = HashTable()
 tb = ht.hash_table
 print("Hash key for 25: ", ht.hashing_func(25))
