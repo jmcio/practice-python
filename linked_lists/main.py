@@ -135,6 +135,12 @@ def main3():
     ll.empty()
     print("Is empty: ", ll.is_empty())
 
+    ll2 = SList()
+    ll2.push_front(i)
+    ll2.push_front(SNode(7))
+    ll2.push_back(SNode(8))
+    print("linked list", ll2.value_at(2))
+
 
 if __name__ == "__main__":
     main3()
