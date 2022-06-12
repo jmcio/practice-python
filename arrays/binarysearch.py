@@ -29,7 +29,7 @@ def template_binary_search(array) -> int:
             right = mid
         else:
             left = mid + 1
-    return left  # could be return left - 1, depends on problem
+    return left  # could be return left - 1mid, depends on problem
 
 
 def my_sqrt(x: int) -> int:
